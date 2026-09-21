@@ -364,10 +364,11 @@
       display:block;
       position:fixed; inset:0; z-index:-1;
       background-image:
-        linear-gradient(180deg, rgba(6,10,26,.22) 0%, rgba(6,10,26,.32) 36%, rgba(6,10,26,.8) 72%, rgba(6,10,26,.97) 100%),
-        url('assets/fondo-saya-boys-movil.jpg');
-      background-size:100% 100%, cover;
-      background-position:center top, center 26%;
+        radial-gradient(ellipse 70% 42% at center 53%, rgba(6,10,26,.7), transparent 70%),
+        linear-gradient(180deg, rgba(6,10,26,.10) 0%, rgba(6,10,26,.12) 28%, rgba(6,10,26,.42) 58%, rgba(6,10,26,.6) 76%, rgba(6,10,26,.9) 100%),
+        url('assets/fondo-saya-boys-movil2.jpg');
+      background-size:100% 100%, 100% 100%, cover;
+      background-position:center, center, center center;
       background-repeat:no-repeat;
     }
 
@@ -377,63 +378,66 @@
     .hero{
       position:relative;
       min-height:0;
-      padding:clamp(16px,4svh,30px) 16px 0;
+      padding:27svh 16px 0;
     }
-    .hero-content{gap:clamp(7px,1.7svh,13px);}
+    .hero-content{gap:clamp(5px,1.3svh,10px);}
 
     .badge{
-      font-size:clamp(11px,2.6svh,13px);
-      padding:clamp(5px,1.2svh,7px) 16px;
+      font-size:clamp(10.5px,2.4svh,12.5px);
+      padding:clamp(4px,1svh,6px) 14px;
       margin-bottom:0;
       letter-spacing:1.5px;
+      background:rgba(8,20,50,.55);
     }
     .hero-title{
-      font-size:clamp(42px,10svh,60px);
+      font-size:clamp(38px,9svh,54px);
       -webkit-text-stroke:1.8px var(--blue-deep);
+      text-shadow:0 4px 0 rgba(0,0,0,.45), 0 10px 22px rgba(0,0,0,.55), 0 0 30px rgba(127,212,255,.3);
     }
     .hero-age{
-      font-size:clamp(18px,4svh,22px);
+      font-size:clamp(16px,3.6svh,20px);
       margin-top:0;
       -webkit-text-stroke:1px var(--blue-deep);
+      text-shadow:0 3px 0 rgba(0,0,0,.4), 0 6px 14px rgba(0,0,0,.5);
     }
     .candles{
-      margin-top:clamp(8px,1.9svh,15px);
-      height:clamp(27px,5.6svh,35px);
-      gap:5px;
+      margin-top:clamp(6px,1.4svh,11px);
+      height:clamp(22px,4.6svh,30px);
+      gap:4px;
     }
-    .candle{width:5px;}
-    .candle::after{width:8px; height:12px;}
+    .candle{width:4px;}
+    .candle::after{width:7px; height:11px;}
 
     .details{
       min-height:0;
       display:flex;
       align-items:center;
       justify-content:center;
-      padding:clamp(12px,2.6svh,20px) 16px clamp(16px,3.2svh,26px);
+      padding:clamp(8px,1.8svh,14px) 16px clamp(10px,2svh,16px);
     }
     .panel{display:flex; flex-direction:column; align-items:center;}
 
-    .countdown-label{font-size:clamp(11px,2.4svh,12.5px); margin-bottom:clamp(6px,1.2svh,9px);}
-    .countdown{gap:8px; margin-bottom:clamp(12px,2.4svh,20px);}
-    .cbox{width:clamp(54px,15vw,68px); padding:clamp(7px,1.4svh,11px) 4px; border-width:2px; border-radius:11px;}
-    .cbox .num{font-size:clamp(19px,4svh,24px);}
-    .cbox .lbl{font-size:9.5px;}
+    .countdown-label{font-size:clamp(10.5px,2.2svh,12px); margin-bottom:clamp(4px,.9svh,7px);}
+    .countdown{gap:7px; margin-bottom:clamp(8px,1.8svh,14px);}
+    .cbox{width:clamp(50px,14vw,64px); padding:clamp(6px,1.2svh,9px) 4px; border-width:2px; border-radius:10px;}
+    .cbox .num{font-size:clamp(17px,3.6svh,22px);}
+    .cbox .lbl{font-size:9px;}
 
-    .divider{margin:0 auto clamp(12px,2.4svh,20px);}
+    .divider{margin:0 auto clamp(8px,1.8svh,14px);}
 
-    .info-rows{gap:clamp(8px,1.7svh,13px); margin-bottom:clamp(12px,2.4svh,20px); width:100%;}
-    .info-row{padding:clamp(9px,1.7svh,13px) 12px; gap:12px; border-radius:12px;}
-    .info-row svg{width:19px; height:19px;}
-    .info-row .t1{font-size:13px;}
-    .info-row .t2{font-size:11px;}
+    .info-rows{gap:clamp(6px,1.3svh,10px); margin-bottom:clamp(8px,1.8svh,14px); width:100%;}
+    .info-row{padding:clamp(7px,1.4svh,10px) 12px; gap:11px; border-radius:11px;}
+    .info-row svg{width:18px; height:18px;}
+    .info-row .t1{font-size:12.5px;}
+    .info-row .t2{font-size:10.5px;}
 
-    .rsvp-label{font-size:clamp(18px,4svh,22px); margin-bottom:clamp(9px,1.8svh,15px); -webkit-text-stroke:.9px var(--blue-deep);}
+    .rsvp-label{font-size:clamp(16px,3.6svh,20px); margin-bottom:clamp(6px,1.3svh,11px); -webkit-text-stroke:.9px var(--blue-deep);}
 
-    .buttons{gap:clamp(9px,1.8svh,13px); width:100%;}
-    .btn{padding:clamp(11px,2.3svh,15px) 16px; font-size:clamp(13.5px,3svh,16px); border-width:2.5px; box-shadow:3.5px 3.5px 0 var(--black); border-radius:11px;}
-    .btn svg{width:16px; height:16px;}
+    .buttons{gap:clamp(7px,1.5svh,11px); width:100%;}
+    .btn{padding:clamp(9px,2svh,13px) 16px; font-size:clamp(12.5px,2.8svh,15px); border-width:2.5px; box-shadow:3.5px 3.5px 0 var(--black); border-radius:11px;}
+    .btn svg{width:15px; height:15px;}
 
-    .footer-note{margin-top:clamp(8px,1.6svh,13px); font-size:10.5px;}
+    .footer-note{margin-top:clamp(8px,1.6svh,13px); font-size:10.5px; text-shadow:0 2px 6px rgba(0,0,0,.6);}
   }
 </style>
 </head>
