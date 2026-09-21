@@ -417,8 +417,16 @@
     }
     .panel{display:flex; flex-direction:column; align-items:center;}
 
+    /* el contador pasa al final, ya que en esta imagen la franja vacía es más corta */
+    .info-rows{order:1;}
+    .rsvp-label{order:2;}
+    .buttons{order:3;}
+    .divider{order:4;}
+    .countdown-wrap{order:5;}
+    .footer-note{order:6;}
+
     .countdown-label{font-size:clamp(10.5px,2.2svh,12px); margin-bottom:clamp(4px,.9svh,7px);}
-    .countdown{gap:7px; margin-bottom:clamp(8px,1.8svh,14px);}
+    .countdown{gap:7px; margin-bottom:0;}
     .cbox{width:clamp(50px,14vw,64px); padding:clamp(6px,1.2svh,9px) 4px; border-width:2px; border-radius:10px;}
     .cbox .num{font-size:clamp(17px,3.6svh,22px);}
     .cbox .lbl{font-size:9px;}
@@ -470,7 +478,7 @@
 
 <section class="details">
   <div class="panel">
-    <div class="reveal">
+    <div class="countdown-wrap reveal">
       <div class="countdown-label">🎉 Faltan para la fiesta</div>
       <div class="countdown" id="countdown">
         <div class="cbox"><div class="num" id="cd-d">–</div><div class="lbl">Días</div></div>
