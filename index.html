@@ -35,10 +35,13 @@
   /* ---- background ---- */
   .bg{
     position:fixed; inset:0;
-    background:
-      radial-gradient(circle at 18% 10%, rgba(127,212,255,0.28), transparent 50%),
-      radial-gradient(circle at 88% 85%, rgba(61,132,245,0.30), transparent 55%),
-      linear-gradient(160deg, var(--blue-deep) 0%, #0c1230 55%, var(--black) 100%);
+    background-image:
+      radial-gradient(circle at 18% 10%, rgba(127,212,255,0.18), transparent 50%),
+      linear-gradient(180deg, rgba(6,10,26,.55) 0%, rgba(6,10,26,.75) 55%, rgba(6,10,26,.92) 100%),
+      url('assets/fondo-saya-boys.jpg');
+    background-size:cover;
+    background-position:center 30%;
+    background-repeat:no-repeat;
     z-index:0;
   }
   .stars{position:fixed; inset:0; z-index:0; pointer-events:none;}
